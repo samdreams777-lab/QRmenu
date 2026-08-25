@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI B.O.S.S. QR Menu — Dashboard (Demo)</title>
+    <style>
+        :root {
+            --bg: #0f1419; --card: #1a212b; --fg: #e8eaed; --muted: #9aa4b2;
+            --accent: #ffc107; --green: #4caf50; --border: #2a323d;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--bg); color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        header { padding: 20px 24px; border-bottom: 1px solid var(--border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+        h1 { font-size: 18px; margin: 0; }
+        .sub { color: var(--muted); font-size: 13px; }
+        .wrap { padding: 20px 24px; max-width: 1100px; margin: 0 auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; margin-bottom: 22px; }
+        .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
+        .kpi .v { font-size: 26px; font-weight: 700; }
+        .kpi .l { color: var(--muted); font-size: 12px; margin-top: 4px; }
+        .kpi .v.accent { color: var(--accent); }
+        .kpi .v.green { color: var(--green); }
+        .section { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin-bottom: 18px; }
+        .section h2 { font-size: 15px; margin: 0 0 12px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+        th { color: var(--muted); font-weight: 600; }
+        .bar { height: 8px; background: var(--border); border-radius: 6px; overflow: hidden; min-width: 60px; }
+        .bar > i { display: block; height: 100%; background: var(--accent); }
+        .refresh { background: var(--accent); color: #000; border: none; border-radius: 8px; padding: 8px 16px; font-weight: 600; cursor: pointer; }
+        .note { color: var(--muted); font-size: 12px; margin-top: 6px; }
+        .pill { display:inline-block; font-size:11px; padding:2px 8px; border-radius:10px; background:var(--border); color:var(--muted); }
+        .controls { display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
+        .controls input, .controls select { background: var(--card); color: var(--fg); border:1px solid var(--border); border-radius:8px; padding:8px 10px; font-size:13px; }
+        .err { background:#3a1d1d; border:1px solid #5a2a2a; color:#ffb4b4; padding:12px 14px; border-radius:10px; margin-bottom:16px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>AI B.O.S.S. QR Menu — Dashboard</h1>
+            <div class="sub" id="dateLine">Today</div>
+        </div>
+        <div class="controls">
+            <select id="restSelect"></select>
+            <input id="tokenInput" type="password" placeholder="owner token" size="22">
+            <button class="refresh" onclick="load()">↻ Load</button>
+        </div>
+    </header>
+    <div class="wrap">
+        <div id="errBox"></div>
+        <div class="grid" id="kpis"></div>
+
+        <div class="section">
+            <h2>📊 Session by Table</h2>
+            <table id="tableTable">
+                <thead><tr><th>Table</th><th>Sessions</th><th></th></tr></thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <div class="note">Distinct anonymous sessions per table (today). Helps spot real table load.</div>
+        </div>
+
+        <div class="grid" style="grid-template-columns:1fr 1fr; gap:18px;">
+            <div class="section">
+                <h2>👁 Most viewed products</h2>
+                <table id="viewTable"><tbody id="viewBody"></tbody></table>
+            </div>
+            <div class="section">
+                <h2>🛒 Most ordered products</h2>
+                <table id="orderTable"><tbody id="orderBody"></tbody></table>
+            </div>
+        </div>
+
+        <div class="note">
+            Access is owner-authenticated. Token is sent to <code>/api/analytics?restaurant=&amp;token=</code>
+            (or <code>Authorization: Bearer</code>). In production, the token is issued to the venue owner only —
+            one venue's owner cannot read another venue's data.
+            Demo data: <code>data/analytics.jsonl</code>, <code>data/orders.jsonl</code>. No personal data collected.
+        </div>
+    </div>
+
+    <script>
+        function pct(x) { return (x * 100).toFixed(1) + '%'; }
+
+        // Token persistence (local only; not PII). Prefill from ?token= or localStorage.
+        function getToken() {
+            var q = new URLSearchParams(location.search).get('token');
+            if (q) { try { localStorage.setItem('aiboss_dash_token', q); } catch (e) {} return q; }
+            try { return localStorage.getItem('aiboss_dash_token') || ''; } catch (e) { return ''; }
+        }
+        function getRestaurant() {
+            var q = new URLSearchParams(location.search).get('restaurant');
+            if (q) return q;
+            try { return localStorage.getItem('aiboss_dash_rest') || 'camon'; } catch (e) { return 'camon'; }
+        }
+
+        // populate restaurant selector from config
+        (function init() {
+            var sel = document.getElementById('restSelect');
+            ['camon', 'common'].forEach(function (r) {
+                var o = document.createElement('option');
+                o.value = r; o.textContent = r;
+                sel.appendChild(o);
+            });
+            sel.value = getRestaurant();
+            document.getElementById('tokenInput').value = getToken();
+        })();
+
+        function load() {
+            var rest = document.getElementById('restSelect').value;
+            var token = document.getElementById('tokenInput').value.trim();
+            try { localStorage.setItem('aiboss_dash_token', token); localStorage.setItem('aiboss_dash_rest', rest); } catch (e) {}
+            document.getElementById('errBox').innerHTML = '';
+            fetch('/api/analytics?restaurant=' + encodeURIComponent(rest) + '&token=' + encodeURIComponent(token))
+                .then(function (r) {
+                    if (r.status === 401) { throw new Error('Unauthorized — invalid or missing owner token'); }
+                    if (r.status === 404) { throw new Error('Unknown restaurant'); }
+                    if (!r.ok) { throw new Error('HTTP ' + r.status); }
+                    return r.json();
+                })
+                .then(render)
+                .catch(function (e) {
+                    document.getElementById('kpis').innerHTML = '';
+                    document.getElementById('errBox').innerHTML = '<div class="err">⚠ ' + e.message + '</div>';
+                });
+        }
+
+        function render(d) {
+            document.getElementById('dateLine').textContent = 'Venue: ' + d.restaurant_id + '  ·  Date: ' + d.date + '  ·  total events: ' + d.total_events;
+            const kpis = [
+                { v: d.menu_opens, l: 'Menu opens (today)', c: '' },
+                { v: d.unique_sessions, l: 'Unique sessions', c: 'accent' },
+                { v: d.orders, l: 'Orders', c: 'green' },
+                { v: pct(d.conversion), l: 'Menu → Order', c: 'green' }
+            ];
+            document.getElementById('kpis').innerHTML = kpis.map(k =>
+                '<div class="kpi"><div class="v ' + k.c + '">' + k.v + '</div><div class="l">' + k.l + '</div></div>'
+            ).join('');
+
+            var tb = document.getElementById('tableBody');
+            if (!d.table_stats.length) {
+                tb.innerHTML = '<tr><td colspan="3" class="note">No table sessions yet.</td></tr>';
+            } else {
+                var max = Math.max.apply(null, d.table_stats.map(t => t.sessions));
+                tb.innerHTML = d.table_stats.map(t =>
+                    '<tr><td><b>Table ' + t.table_id + '</b></td><td>' + t.sessions + '</td>' +
+                    '<td><div class="bar"><i style="width:' + (max ? (t.sessions / max * 100) : 0) + '%"></i></div></td></tr>'
+                ).join('');
+            }
+
+            var vb = document.getElementById('viewBody');
+            vb.innerHTML = (d.top_viewed.length ? d.top_viewed : [{ product_id: '—', views: 0 }]).map(p =>
+                '<tr><td>' + p.product_id + '</td><td>' + p.views + ' views</td></tr>'
+            ).join('');
+
+            var ob = document.getElementById('orderBody');
+            ob.innerHTML = (d.top_ordered.length ? d.top_ordered : [{ product_id: '—', ordered: 0 }]).map(p =>
+                '<tr><td>' + p.product_id + '</td><td>' + p.ordered + ' ordered</td></tr>'
+            ).join('');
+        }
+
+        // auto-load on open (token may be prefilled)
+        load();
+        setInterval(load, 15000);
+    </script>
+</body>
+</html>

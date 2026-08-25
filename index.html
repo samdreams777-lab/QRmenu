@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=no">
+    <base href="/">
+    <title>Camon Coffee - QR Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container" id="menuContainer">
+        <!-- Loading state -->
+        <div class="loading-screen" id="loadingScreen">
+            <div class="loading-content">
+                <div class="logo">☕</div>
+                <h2 class="loading-title" id="loadingCafeName">Camon Coffee</h2>
+                <p class="loading-subtitle" data-en="Loading menu..." data-vi="Đang tải thực đơn...">Loading menu...</p>
+                <div class="spinner"></div>
+            </div>
+        </div>
+
+        <!-- Main menu content -->
+        <div class="menu-content" style="display: none;">
+            <!-- Header -->
+            <header class="menu-header">
+                <div class="cafe-info">
+                    <img src="/menu_photos/logo.png" alt="Common Coffee" class="cafe-logo" aria-hidden="true">
+                    <h1 class="cafe-name" id="cafeName">Camon Coffee</h1>
+                </div>
+                <div class="header-controls">
+                    <button class="theme-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">☀</button>
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="en" id="langEn">EN</button>
+                        <button class="lang-btn" data-lang="vi" id="langVi">VI</button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Menu section: shader background behind catalog -->
+            <div class="menu-section">
+                <canvas class="shader-background" id="catalogShader" aria-hidden="true"></canvas>
+                <div class="menu-section-content">
+            <!-- Categories Navigation -->
+            <div class="categories-wrap">
+                <button class="cat-arrow left" id="catArrowLeft" aria-label="Scroll categories left">‹</button>
+                <nav class="categories-nav" id="categoriesNav"></nav>
+                <button class="cat-arrow right" id="catArrowRight" aria-label="Scroll categories right">›</button>
+            </div>
+            <p class="cat-hint" data-en="← Swipe or scroll →" data-vi="← Vuốt hoặc cuộn →"><span class="scroll-cue">← Swipe or scroll →</span></p>
+
+            <!-- Items Container -->
+            <div class="items-container" id="itemsContainer">
+                <div class="loading-items"><p>Loading...</p></div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary" id="cartSummary">
+                <div class="cart-total">
+                    <span class="cart-label" data-en="Total:" data-vi="Tổng:">Total:</span>
+                    <span class="cart-amount" id="cartTotalAmount">₫ 0</span>
+                </div>
+                <div class="cart-count">
+                    <span id="cartItemCount">0</span>
+                    <span class="cart-label" data-en="items" data-vi="món">items</span>
+                </div>
+                <button class="cart-open-btn" id="openCartBtn" data-en="View Cart" data-vi="Xem Giỏ">View Cart</button>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" id="cartModalClose">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title" data-en="Your Cart" data-vi="Giỏ Hàng">Your Cart</h2>
+            </div>
+            <div class="modal-body" id="cartModalBody">
+                <div id="cartItemsList"></div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total-footer">
+                    <span data-en="Total:" data-vi="Tổng:">Total:</span>
+                    <span id="cartTotalFinal">₫ 0</span>
+                </div>
+                <div class="cart-footer-buttons">
+                    <button class="cart-clear-btn" id="clearCartBtn" data-en="Clear Cart" data-vi="Xóa Giỏ">Clear Cart</button>
+                    <button class="place-order-btn" id="placeOrderBtn" data-en="Place Order" data-vi="Đặt Hàng">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Modal -->
+    <div class="modal" id="orderModal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" id="orderModalClose">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title" data-en="Complete Order" data-vi="Hoàn Thành Đơn Hàng">Complete Order</h2>
+            </div>
+            <div class="modal-body" id="orderModalBody">
+                <div id="orderItemsList"></div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total-footer">
+                    <span data-en="Total:" data-vi="Tổng:">Total:</span>
+                    <span id="orderTotalFinal">₫ 0</span>
+                </div>
+                <div class="order-info">
+                    <p data-en="Order #:" data-vi="Mã đơn:">Order #:</p>
+                    <p><strong id="orderNumber">CC-000000</strong></p>
+                </div>
+                <button class="send-order-btn" id="sendOrderBtn" data-en="Send Order" data-vi="Gửi Đơn Hàng">Send Order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-body" id="successModalBody">
+                <div class="success-icon">✓</div>
+                <h2 class="modal-title" id="successTitle" data-en="Order sent successfully!" data-vi="Đã gửi đơn hàng thành công!">Order sent successfully!</h2>
+                <p class="success-order-no" id="successOrderNumber"></p>
+                <p class="success-thanks" id="successThanks" data-en="Thank you for your order!" data-vi="Cảm ơn bạn đã đặt hàng!">Thank you for your order!</p>
+                <!-- Loyalty / return-visit block (Phase 3/4 architecture stub) -->
+                <div id="successLoyalty"></div>
+                <p class="success-review-prompt" id="successReviewPrompt" data-en="Would you like to leave us a review on Google?" data-vi="Bạn có muốn để lại đánh giá trên Google không?">Would you like to leave us a review on Google?</p>
+                <button class="google-review-btn" id="googleReviewBtn" data-en="Leave a Google Review" data-vi="Đánh Giá Google">Leave a Google Review</button>
+                <button class="back-to-menu-btn" id="backToMenuBtn" data-en="Back to Menu" data-vi="Quay Lại Thực Đơn">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item Detail Modal -->
+    <div class="modal" id="itemModal">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" id="itemModalClose">&times;</span>
+            <div class="modal-body" id="itemModalBody">
+                <!-- Item detail will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- AI B.O.S.S. context, analytics, loyalty, shader background (load before app logic) -->
+    <script src="session.js"></script>
+    <script src="analytics.js"></script>
+    <script src="customer.js"></script>
+    <script src="shader-background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

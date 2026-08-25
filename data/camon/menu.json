@@ -1,0 +1,1301 @@
+{
+  "cafe": "Camon Coffee",
+  "currency": "VND",
+  "hotline": "0915 292 777",
+  "categories": [
+    {
+      "id": "cafe",
+      "name_vi": "Cà Phê",
+      "name_en": "Coffee",
+      "items": [
+        {
+          "name": "Espresso",
+          "name_vi": "Espresso",
+          "name_en": "Espresso",
+          "description_vi": "Espresso đậm đà",
+          "description_en": "Rich espresso shot",
+          "price": 17000,
+          "image": "lucid-origin_A_single_shot_of_rich_Vietnamese_espresso_in_a_small_elegant_ceramic_espresso_cu-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Espresso with Condensed Milk",
+          "name_vi": "Cà Phê Sữa Đá",
+          "name_en": "Espresso with Condensed Milk",
+          "description_vi": "Espresso ngọt với sữa dẻt",
+          "description_en": "Espresso with sweet condensed milk",
+          "price": 20000,
+          "image": "lucid-origin_A_single_shot_of_rich_Vietnamese_espresso_in_a_small_elegant_ceramic_espresso_cu-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Saigon Black Coffee",
+          "name_vi": "Cà Phê Đen Sài Gòn",
+          "name_en": "Saigon Black Coffee",
+          "description_vi": "Cà phê đen truyền thống",
+          "description_en": "Vietnamese traditional black coffee",
+          "price": 25000,
+          "image": "lucid-origin_Traditional_Vietnamese_phin_coffee_dark_black_coffee_slowly_brewed_through_a_sta-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Saigon Milk Coffee",
+          "name_vi": "Cà Phê Sữa Sài Gòn",
+          "name_en": "Saigon Milk Coffee",
+          "description_vi": "Cà phê sữa truyền thống",
+          "description_en": "Vietnamese coffee with milk",
+          "price": 29000,
+          "image": "lucid-origin_Traditional_Vietnamese_phin_coffee_dark_black_coffee_slowly_brewed_through_a_sta-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Salted Cream Bac Xiu",
+          "name_vi": "Bạc Xỉu Kem Muối",
+          "name_en": "Salted Cream Bac Xiu",
+          "description_vi": "Cà phê vị mặn creami",
+          "description_en": "Vietnamese salted cream coffee",
+          "price": 35000,
+          "image": "lucid-origin_Vietnamese_bạc_xỉu_with_salted_cream_elegant_transparent_glass_pale_creamy_m-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Young Coconut Coffee Latte",
+          "name_vi": "Latte Cà Phê Dừa Non",
+          "name_en": "Young Coconut Coffee Latte",
+          "description_vi": "Latte cà phê với dừa tươi",
+          "description_en": "Coffee latte with young coconut",
+          "price": 39000,
+          "image": "lucid-origin_Vietnamese_coconut_coffee_creamy_coconut_smoothie_base_blended_with_strong_Vietn-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Cà Phê"
+    },
+    {
+      "id": "coldbrew",
+      "name_vi": "Cold Brew",
+      "name_en": "Cold Brew",
+      "items": [
+        {
+          "name": "Mulberry Cold Brew",
+          "name_vi": "Cold Brew Mận",
+          "name_en": "Mulberry Cold Brew",
+          "description_vi": "Cold brew với mụ mơ",
+          "description_en": "Cold brew coffee with mulberry",
+          "price": 35000,
+          "image": "lucid-origin_Premium_mulberry_cold_brew_coffee_transparent_glass_filled_with_ice_deep_ruby-pu-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Thai Tamarind Cold Brew",
+          "name_vi": "Cold Brew Me Thái",
+          "name_en": "Thai Tamarind Cold Brew",
+          "description_vi": "Cold brew với me thái",
+          "description_en": "Cold brew coffee with tamarind",
+          "price": 35000,
+          "image": "lucid-origin_Exotic_Vietnamese_fruit_cold_brew_coffee_transparent_glass_filled_with_crystal_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Plum Cold Brew",
+          "name_vi": "Cold Brew Mơ",
+          "name_en": "Plum Cold Brew",
+          "description_vi": "Cold brew với mức",
+          "description_en": "Cold brew coffee with plum",
+          "price": 35000,
+          "image": "lucid-origin_Exotic_Vietnamese_fruit_cold_brew_coffee_transparent_glass_filled_with_crystal_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Honey Grapefruit Cold Brew",
+          "name_vi": "Cold Brew Bưởi Mật Ong",
+          "name_en": "Honey Grapefruit Cold Brew",
+          "description_vi": "Cold brew với honey và grapefruit",
+          "description_en": "Cold brew coffee with honey and grapefruit",
+          "price": 35000,
+          "image": "lucid-origin_Exotic_Vietnamese_fruit_cold_brew_coffee_transparent_glass_filled_with_crystal_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Cold Brew"
+    },
+    {
+      "id": "tea",
+      "name_vi": "Trà",
+      "name_en": "Tea",
+      "items": [
+        {
+          "name": "Gio Linh Net Island Oolong",
+          "name_vi": "Trà Oolong Đảo Gio Linh",
+          "name_en": "Gio Linh Net Island Oolong",
+          "description_vi": "Trà Oolong hữu hạn",
+          "description_en": "Limited Net Island Oolong tea",
+          "price": 45000,
+          "image": "lucid-origin_Premium_Vietnamese_highland_oolong_tea_served_in_a_transparent_glass_teapot_with-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Huong Hoa Summer Sun Oolong",
+          "name_vi": "Trà Oolong Hương Hóa",
+          "name_en": "Huong Hoa Summer Sun Oolong",
+          "description_vi": "Trà Oolong Hương Hóa nắng hè",
+          "description_en": "Huong Hoa Summer Sun Oolong tea",
+          "price": 45000,
+          "image": "lucid-origin_Premium_Vietnamese_highland_oolong_tea_served_in_a_transparent_glass_teapot_with-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Quang Tri Miami Oolong",
+          "name_vi": "Trà Oolong Quảng Trị Miami",
+          "name_en": "Quang Tri Miami Oolong",
+          "description_vi": "Trà Oolong Quảng Trị Miami",
+          "description_en": "Quang Tri Miami Oolong tea",
+          "price": 45000,
+          "image": "lucid-origin_Premium_Vietnamese_highland_oolong_tea_served_in_a_transparent_glass_teapot_with-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Strawberry Tea",
+          "name_vi": "Trà Dâu",
+          "name_en": "Strawberry Tea",
+          "description_vi": "Trà dâu tươi ngon",
+          "description_en": "Fresh strawberry tea",
+          "price": 43000,
+          "image": "lucid-origin_Iced_strawberry_tea_transparent_tall_glass_filled_with_golden_red_tea_and_crysta-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Peach Orange Lemongrass Tea",
+          "name_vi": "Trà Đào Cam Sả",
+          "name_en": "Peach Orange Lemongrass Tea",
+          "description_vi": "Trà chanh me thanh",
+          "description_en": "Peach orange lemongrass tea",
+          "price": 43000,
+          "image": "lucid-origin_Peach_orange_lemongrass_iced_tea_golden_amber_tea_in_a_transparent_glass_with_ic-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Lychee Rose Tea",
+          "name_vi": "Trà Vải Hoa Hồng",
+          "name_en": "Lychee Rose Tea",
+          "description_vi": "Trà lychee hoa hồng",
+          "description_en": "Lychee rose tea",
+          "price": 43000,
+          "image": "lucid-origin_Lychee_rose_iced_tea_pale_pink-golden_tea_in_an_elegant_transparent_glass_fresh_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Oolong Milk Tea",
+          "name_vi": "Trà Sữa Oolong",
+          "name_en": "Oolong Milk Tea",
+          "description_vi": "Trà sữa oolong tuyệt vời",
+          "description_en": "Delicious oolong milk tea",
+          "price": 43000,
+          "image": "lucid-origin_Premium_Vietnamese_oolong_milk_tea_creamy_beige_milk_tea_served_in_a_transparent-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Tamarind Jelly Tea",
+          "name_vi": "Trà Me Thạch",
+          "name_en": "Tamarind Jelly Tea",
+          "description_vi": "Trà jelly me thơm",
+          "description_en": "Tamarind jelly tea",
+          "price": 43000,
+          "image": "lucid-origin_Exotic_Vietnamese_fruit_cold_brew_coffee_transparent_glass_filled_with_crystal_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Trà"
+    },
+    {
+      "id": "matcha",
+      "name_vi": "Matcha",
+      "name_en": "Matcha",
+      "items": [
+        {
+          "name": "Strawberry Matcha Latte",
+          "name_vi": "Matcha Latte Dâu",
+          "name_en": "Strawberry Matcha Latte",
+          "description_vi": "Latte matcha với dâu",
+          "description_en": "Matcha latte with strawberry",
+          "price": 45000,
+          "image": "lucid-origin_Strawberry_matcha_latte_elegant_transparent_glass_with_vivid_green_ceremonial_ma-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Blueberry Matcha Latte",
+          "name_vi": "Matcha Latte Việt Quất",
+          "name_en": "Blueberry Matcha Latte",
+          "description_vi": "Latte matcha xanh dương",
+          "description_en": "Blueberry matcha latte",
+          "price": 45000,
+          "image": "lucid-origin_Blueberry_matcha_latte_transparent_glass_with_vivid_emerald_green_matcha_and_cre-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Special Matcha Latte",
+          "name_vi": "Matcha Latte Đặc Biệt",
+          "name_en": "Special Matcha Latte",
+          "description_vi": "Matcha đặc biệt",
+          "description_en": "Special matcha latte",
+          "price": 45000,
+          "image": "lucid-origin_Blueberry_matcha_latte_transparent_glass_with_vivid_emerald_green_matcha_and_cre-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Pink Matcha",
+          "name_vi": "Matcha Hồng",
+          "name_en": "Pink Matcha",
+          "description_vi": "Matcha màu hồng",
+          "description_en": "Soft pink matcha",
+          "price": 39000,
+          "image": "lucid-origin_Pink_strawberry_matcha_latte_beautiful_pastel_pink_strawberry_milk_base_topped_w-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Phin Matcha",
+          "name_vi": "Matcha Phin",
+          "name_en": "Phin Matcha",
+          "description_vi": "Matcha lọc bằng phin",
+          "description_en": "Vietnamese filter matcha",
+          "price": 35000,
+          "image": "lucid-origin_Vietnamese_phin_matcha_ceremonial_green_matcha_being_slowly_filtered_through_a_t-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Coconut Matcha Latte",
+          "name_vi": "Matcha Latte Dừa",
+          "name_en": "Coconut Matcha Latte",
+          "description_vi": "Latte matcha với dừa",
+          "description_en": "Coconut matcha latte",
+          "price": 45000,
+          "image": "lucid-origin_Coconut_matcha_latte_creamy_white_coconut_milk_and_vivid_emerald_green_matcha_la-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Matcha"
+    },
+    {
+      "id": "blended",
+      "name_vi": "Đồ Trộn",
+      "name_en": "Blended",
+      "items": [
+        {
+          "name": "Blended Chocolate",
+          "name_vi": "Blended Sô-cô-la",
+          "name_en": "Blended Chocolate",
+          "description_vi": "Smoothie chocolate",
+          "description_en": "Chocolate smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Thick_blended_iced_chocolate_drink_rich_dark_chocolate_smoothie_texture_served_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Blended Taro",
+          "name_vi": "Blended Khoai Môn",
+          "name_en": "Blended Taro",
+          "description_vi": "Smoothie đậu tiền",
+          "description_en": "Purple sweet potato smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Thick_blended_taro_drink_soft_lavender-purple_creamy_smoothie_elegant_transparen-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Blended Coconut Flan",
+          "name_vi": "Blended Flan Dừa",
+          "name_en": "Blended Coconut Flan",
+          "description_vi": "Smoothie flan dừa",
+          "description_en": "Coconut flan smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Blended_coconut_flan_dessert_drink_creamy_pale_coconut_smoothie_with_caramel_fla-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Blended Cocoa",
+          "name_vi": "Blended Cacao",
+          "name_en": "Blended Cocoa",
+          "description_vi": "Smoothie cocoa",
+          "description_en": "Rich cocoa smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Thick_blended_iced_chocolate_drink_rich_dark_chocolate_smoothie_texture_served_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Đồ Trộn"
+    },
+    {
+      "id": "avocado",
+      "name_vi": "Đồ Uống Bơ",
+      "name_en": "Avocado Drinks",
+      "items": [
+        {
+          "name": "Avocado Smoothie",
+          "name_vi": "Sinh Tố Bơ",
+          "name_en": "Avocado Smoothie",
+          "description_vi": "Smoothie avocado tươi",
+          "description_en": "Fresh avocado smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Thick_Vietnamese_avocado_smoothie_rich_pale_green_creamy_texture_in_a_clear_eleg-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Mango Smoothie",
+          "name_vi": "Sinh Tố Xoài",
+          "name_en": "Mango Smoothie",
+          "description_vi": "Smoothie xoài ngon",
+          "description_en": "Delicious mango smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Thick_fresh_mango_smoothie_vibrant_natural_golden-yellow_color_creamy_tropical_t-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Banana Smoothie",
+          "name_vi": "Sinh Tố Chuối",
+          "name_en": "Banana Smoothie",
+          "description_vi": "Smoothie chuối ngon",
+          "description_en": "Sweet banana smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Tropical_creamy_fruit_smoothie_pale_ivory_coconut_base_blended_with_ripe_banana_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Pink Avocado with Strawberry",
+          "name_vi": "Bơ Dâu Hồng",
+          "name_en": "Pink Avocado with Strawberry",
+          "description_vi": "Smoothie hồng với dâu",
+          "description_en": "Pink strawberry avocado smoothie",
+          "price": 45000,
+          "image": "lucid-origin_Pink_avocado_strawberry_smoothie_creamy_pastel_pink_and_pale_green_layers_fresh_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Đồ Uống Bằng Avocado"
+    },
+    {
+      "id": "juices",
+      "name_vi": "Nước Ép",
+      "name_en": "Juices",
+      "items": [
+        {
+          "name": "Orange Juice",
+          "name_vi": "Nước Cam",
+          "name_en": "Orange Juice",
+          "description_vi": "Nước cam tươi",
+          "description_en": "Fresh orange juice",
+          "price": 35000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Watermelon Juice",
+          "name_vi": "Nước Dưa Hấu",
+          "name_en": "Watermelon Juice",
+          "description_vi": "Nước dưa hấu mát",
+          "description_en": "Refreshing watermelon juice",
+          "price": 30000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Passion Fruit Juice",
+          "name_vi": "Nước Chanh Dây",
+          "name_en": "Passion Fruit Juice",
+          "description_vi": "Nước sầu riê chua ngọt",
+          "description_en": "Tart sweet passion fruit juice",
+          "price": 35000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Carrot Juice",
+          "name_vi": "Nước Cà Rốt",
+          "name_en": "Carrot Juice",
+          "description_vi": "Nước cà rốt tươi",
+          "description_en": "Fresh carrot juice",
+          "price": 30000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Ambarella Juice",
+          "name_vi": "Nước Cóc",
+          "name_en": "Ambarella Juice",
+          "description_vi": "Nước dứa ngọt tự nhiên",
+          "description_en": "Natural sweet ambarella juice",
+          "price": 30000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "needs_review": true,
+          "review_note": "VI name 'Nước Dứa' (pineapple) likely swapped with Pineapple Juice; ambarella = quả cóc. Verify.",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Pineapple Juice",
+          "name_vi": "Nước Dứa",
+          "name_en": "Pineapple Juice",
+          "description_vi": "Nước dừa tươi ngon",
+          "description_en": "Fresh pineapple juice",
+          "price": 35000,
+          "image": "lucid-origin_Freshly_pressed_tropical_fruit_juice_vibrant_natural_fruit_color_served_in_a_sim-0.jpg",
+          "needs_review": true,
+          "review_note": "VI name 'Nước Dừa' (coconut) likely swapped with Ambarella Juice; pineapple = thơm/dứa. Verify.",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Nước Giải Khát"
+    },
+    {
+      "id": "hot_drinks",
+      "name_vi": "Đồ Uống Nóng",
+      "name_en": "Hot Drinks",
+      "items": [
+        {
+          "name": "Traditional Ginger Tea",
+          "name_vi": "Trà Gừng Truyền Thống",
+          "name_en": "Traditional Ginger Tea",
+          "description_vi": "Trà gừng ấm bới",
+          "description_en": "Traditional brewed ginger tea",
+          "price": 25000,
+          "image": "lucid-origin_Vietnamese_herbal_hot_tea_served_steaming_in_a_small_elegant_ceramic_cup_with_a_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Brown Sugar Ginger Tea",
+          "name_vi": "Trà Gừng Đường Nâu",
+          "name_en": "Brown Sugar Ginger Tea",
+          "description_vi": "Trà gừng đường nâu",
+          "description_en": "Brown sugar ginger tea",
+          "price": 30000,
+          "image": "lucid-origin_Vietnamese_herbal_hot_tea_served_steaming_in_a_small_elegant_ceramic_cup_with_a_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Chamomile Honey Tea",
+          "name_vi": "Trà Cúc Hoa Mật Ong",
+          "name_en": "Chamomile Honey Tea",
+          "description_vi": "Trà cam hoa ngâm honey",
+          "description_en": "Chamomile honey tea",
+          "price": 30000,
+          "image": "lucid-origin_Vietnamese_herbal_hot_tea_served_steaming_in_a_small_elegant_ceramic_cup_with_a_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Đồ Uống Nóng"
+    },
+    {
+      "id": "special",
+      "name_vi": "Đặc Biệt",
+      "name_en": "Special Drinks",
+      "items": [
+        {
+          "name": "Mixed Fruit Yogurt",
+          "name_vi": "Sữa Chua Trái Cây",
+          "name_en": "Mixed Fruit Yogurt",
+          "description_vi": "Sữa chua trái cây",
+          "description_en": "Mixed fruit yogurt",
+          "price": 50000,
+          "image": "lucid-origin_Vietnamese_herbal_hot_tea_served_steaming_in_a_small_elegant_ceramic_cup_with_a_-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Fly to the Moon",
+          "name_vi": "Fly to the Moon",
+          "name_en": "Fly to the Moon",
+          "description_vi": "Smoothie vũ trụ",
+          "description_en": "Galaxy smoothie",
+          "price": 35000,
+          "image": "lucid-origin_Thick_blended_iced_chocolate_drink_rich_dark_chocolate_smoothie_texture_served_i-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        },
+        {
+          "name": "Ginger Berry Watermelon",
+          "name_vi": "Dưa Hấu Gừng Berries",
+          "name_en": "Ginger Berry Watermelon",
+          "description_vi": "Smoothie gừng berry",
+          "description_en": "Ginger berry smoothie",
+          "price": 35000,
+          "image": "lucid-origin_Thick_fresh_mango_smoothie_vibrant_natural_golden-yellow_color_creamy_tropical_t-0.jpg",
+          "modifiers": {
+            "temperature": [
+              "hot",
+              "iced"
+            ],
+            "ice": [
+              "normal",
+              "less",
+              "none"
+            ],
+            "sugar": [
+              "normal",
+              "less",
+              "none"
+            ]
+          }
+        }
+      ],
+      "name": "Đồ Uống Đặc Biệt"
+    },
+    {
+      "id": "baked",
+      "name_vi": "Bánh Mì & Bánh Ngọt",
+      "name_en": "Baked Goods",
+      "items": [
+        {
+          "name": "Matcha Blueberry Roll Cake",
+          "name_vi": "Bánh Cuộn Matcha Việt Quất",
+          "name_en": "Matcha Blueberry Roll Cake",
+          "description_vi": "Bánh roll matcha",
+          "description_en": "Matcha blueberry roll cake",
+          "price": 35000,
+          "image": "lucid-origin_Mousse_cake_Elegant_individual_dessert_cake_on_a_minimalist_ceramic_plate_silky_-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Almond Croissant",
+          "name_vi": "Bánh Croissant Hạnh Nhân",
+          "name_en": "Almond Croissant",
+          "description_vi": "Croissant hạnh nhân",
+          "description_en": "Almond croissant",
+          "price": 29000,
+          "image": "lucid-origin_Freshly_baked_French-style_croissant_on_an_elegant_ceramic_plate_golden_flaky_la-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Chocolate-filled Croissant",
+          "name_vi": "Croissant Chocolate",
+          "name_en": "Chocolate-filled Croissant",
+          "description_vi": "Croissant chocolate",
+          "description_en": "Chocolate croissant",
+          "price": 35000,
+          "image": "lucid-origin_Freshly_baked_French-style_croissant_on_an_elegant_ceramic_plate_golden_flaky_la-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Strawberry Cream Croissant",
+          "name_vi": "Croissant Dâu Phô",
+          "name_en": "Strawberry Cream Croissant",
+          "description_vi": "Croissant dâu phô",
+          "description_en": "Strawberry cream croissant",
+          "price": 35000,
+          "image": "lucid-origin_Freshly_baked_French-style_croissant_on_an_elegant_ceramic_plate_golden_flaky_la-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Salted Egg Croissant",
+          "name_vi": "Croissant Trứng Mặn",
+          "name_en": "Salted Egg Croissant",
+          "description_vi": "Croissant trứng mặn",
+          "description_en": "Salted egg croissant",
+          "price": 29000,
+          "image": "lucid-origin_Freshly_baked_French-style_croissant_on_an_elegant_ceramic_plate_golden_flaky_la-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Coconut Mousse",
+          "name_vi": "Mousse Dừa",
+          "name_en": "Coconut Mousse",
+          "description_vi": "Mousse dừa tươi",
+          "description_en": "Fresh coconut mousse",
+          "price": 29000,
+          "image": "lucid-origin_Mousse_cake_Elegant_individual_dessert_cake_on_a_minimalist_ceramic_plate_silky_-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Tiramisu Mousse",
+          "name_vi": "Mousse Tiramisu",
+          "name_en": "Tiramisu Mousse",
+          "description_vi": "Mousse tiramisu kem",
+          "description_en": "Silky tiramisu mousse",
+          "price": 29000,
+          "image": "lucid-origin_Mousse_cake_Elegant_individual_dessert_cake_on_a_minimalist_ceramic_plate_silky_-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Socola Mousse",
+          "name_vi": "Socola Mousse",
+          "name_en": "Socola Mousse",
+          "description_vi": "Mousse chocolate đậm",
+          "description_en": "Rich chocolate mousse",
+          "price": 29000,
+          "image": "lucid-origin_Mousse_cake_Elegant_individual_dessert_cake_on_a_minimalist_ceramic_plate_silky_-0.jpg",
+          "modifiers": {}
+        }
+      ],
+      "name": "Đã Nướng"
+    },
+    {
+      "id": "ice_cream",
+      "name_vi": "Kem",
+      "name_en": "Ice Cream",
+      "items": [
+        {
+          "name": "Strawberry Ice Cream Cup",
+          "name_vi": "Kem Dâu Ly",
+          "name_en": "Strawberry Ice Cream Cup",
+          "description_vi": "Kem dâu ngon",
+          "description_en": "Delicious strawberry ice cream",
+          "price": 25000,
+          "image": "lucid-origin_Ice_cream_cup_Premium_single_scoop_of_creamy_ice_cream_served_in_a_small_elegant-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Chocolate Ice Cream Cup",
+          "name_vi": "Kem Chocolate",
+          "name_en": "Chocolate Ice Cream Cup",
+          "description_vi": "Kem chocolate đậm",
+          "description_en": "Rich chocolate ice cream",
+          "price": 25000,
+          "image": "lucid-origin_Ice_cream_cup_Premium_single_scoop_of_creamy_ice_cream_served_in_a_small_elegant-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Mixed Cone Ice Cream",
+          "name_vi": "Kem Trụng Trộn",
+          "name_en": "Mixed Cone Ice Cream",
+          "description_vi": "Kem trụng trộn",
+          "description_en": "Assorted ice cream cone",
+          "price": 10000,
+          "image": "lucid-origin_Ice_cream_cup_Premium_single_scoop_of_creamy_ice_cream_served_in_a_small_elegant-0.jpg",
+          "modifiers": {}
+        },
+        {
+          "name": "Vanilla Cone Ice Cream",
+          "name_vi": "Kem Trụng Vani",
+          "name_en": "Vanilla Cone Ice Cream",
+          "description_vi": "Kem trụng vani",
+          "description_en": "Vanilla ice cream cone",
+          "price": 10000,
+          "image": "lucid-origin_Ice_cream_cup_Premium_single_scoop_of_creamy_ice_cream_served_in_a_small_elegant-0.jpg",
+          "modifiers": {}
+        }
+      ],
+      "name": "Kem"
+    }
+  ]
+}

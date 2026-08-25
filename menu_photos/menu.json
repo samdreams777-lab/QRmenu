@@ -1,0 +1,1158 @@
+{
+  "cafe": "Common Coffee",
+  "currency": "VND",
+  "hotline": "0915 292 777",
+  "categories": [
+    {
+      "id": "cafe",
+      "name": "Café",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Espresso",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 17000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Espresso with Condensed Milk",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 20000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Saigon Black Coffee",
+          "description": "Vietnamese traditional black coffee",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 25000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Saigon Milk Coffee",
+          "description": "Vietnamese coffee with milk",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "Bạc Xỉu Mặn",
+          "name_en": "Salted Cream Bac Xiu",
+          "description": "Vietnamese salted cream coffee",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Young Coconut Coffee Latte",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 39000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "coldbrew",
+      "name": "Coldbrew",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Mulberry Cold Brew",
+          "description": "Cold brew coffee with mulberry",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Thai Tamarind Cold Brew",
+          "description": "Cold brew coffee with tamarind",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Plum Cold Brew",
+          "description": "Cold brew coffee with plum",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Honey Grapefruit Cold Brew",
+          "description": "Cold brew coffee with honey and grapefruit",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "name": "Tea",
+      "items": [
+        {
+          "name_vi": "Trà Oolong Đảo Nét Giới Hạn",
+          "name_en": "Gio Linh Net Island Oolong",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "Trà Oolong Hương Hóa Nắng Hè",
+          "name_en": "Huong Hoa Summer Sun Oolong",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "Trà Oolong Quảng Trị Miami",
+          "name_en": "Quang Tri Miami Oolong",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Strawberry Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Peach Orange Lemongrass Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Kumquat Jasmine Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Lychee Rose Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Peach Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Strong Milk Oolong",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 39000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Oolong with Cheese Milk Foam",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Vinh Linh Red Fruit Oolong",
+          "description": "Oolong, Mulberry, Dragon Fruit",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Trieu Phong Red Oolong Tea",
+          "description": "Oolong, Pink Grapefruit, Lychee",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Cam Lo Lemon Cinnamon Oolong",
+          "description": "Oolong, Lemon, Cinnamon, Orange",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Tamarind Jelly Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Fresh Milk with Brown Sugar Boba",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Black Milk Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Oolong Milk Tea with Matcha Cream",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Milk Tea with Grilled Coconut Egg Cream",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 43000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "matcha",
+      "name": "Matcha",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Strawberry Matcha Latte",
+          "description": "Oat Milk available as an option",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blueberry Matcha Latte",
+          "description": "Oat Milk available",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Special Matcha Latte",
+          "description": "Oat Milk",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Matcha Latte Misu",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Pink Matcha",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 39000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blended Matcha",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "Phin Matcha",
+          "name_en": "Phin Matcha",
+          "description": "Vietnamese Filter Matcha",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Coconut Matcha Latte",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Matcha Latte Machiato",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "blended",
+      "name": "Blended Drinks",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Blended Chocolate",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blended Taro",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blended Coconut Flan",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blended Cocoa",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "avocado",
+      "name": "Avocado-Based Drinks",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Avocado Smoothie",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Mango Smoothie",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Banana Smoothie",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Mango Pina Colada",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Pink Avocado with Strawberry",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Mashed Avocado with Cocoa",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Coconut Avocado",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "juices",
+      "name": "Juices",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Orange Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Watermelon Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Passion Fruit Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Carrot Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Ambarella Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": true,
+          "review_reason": "Текст на меню может читаться как 'Amarella' или 'Ambarella' — нужна проверка оригинала"
+        },
+        {
+          "name_vi": "",
+          "name_en": "Pineapple Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "hot_drinks",
+      "name": "Hot Drinks",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Traditional Ginger Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 25000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Brown Sugar Ginger Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Chamomile Honey Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Tangerine Cinnamon Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Herbal Grapefruit Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Warm Ginger Milk Tea",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "soda",
+      "name": "Soda",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Apple Soda",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Strawberry Soda",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Ocean Blue Soda",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 30000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "name": "Special Drinks",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Mixed Fruit Yogurt",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 50000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Fly to the Moon",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Lime Mojito",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Celery, Green Apple, Pineapple Juice",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 45000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Ginger Berry Watermelon",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "baked",
+      "name": "Freshly Baked - Croissant & Cakes",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Matcha Blueberry Roll Cake",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Almond Croissant",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Chocolate-filled Croissant",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Strawberry Cream Croissant",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 35000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Chocolate Cashew Croissant",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 32000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Salted Egg Croissant",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Coconut Mousse",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Tiramisu Mousse",
+          "description": "",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Socola Mousse",
+          "description": "Chocolate Mousse",
+          "variants": [
+            {
+              "name": "Regular",
+              "price": 29000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    },
+    {
+      "id": "ice_cream",
+      "name": "Ice Cream",
+      "items": [
+        {
+          "name_vi": "",
+          "name_en": "Strawberry Ice Cream Cup",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cup",
+              "price": 25000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Chocolate Ice Cream Cup",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cup",
+              "price": 25000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Blueberry Ice Cream Cup",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cup",
+              "price": 25000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Mixed Cone Ice Cream",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cone",
+              "price": 10000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Chocolate Cone Ice Cream",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cone",
+              "price": 10000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        },
+        {
+          "name_vi": "",
+          "name_en": "Vanilla Cone Ice Cream",
+          "description": "",
+          "variants": [
+            {
+              "name": "Cone",
+              "price": 10000
+            }
+          ],
+          "needs_review": false,
+          "review_reason": ""
+        }
+      ]
+    }
+  ]
+}

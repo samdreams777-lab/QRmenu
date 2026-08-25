@@ -1,0 +1,14 @@
+# Runtime data (demo append-only stores) — generated at runtime, not source
+data/analytics.jsonl
+data/orders.jsonl
+
+# Generated QR assets (regenerable via generate_qr.py)
+qr/
+qr_local/
+
+# Python caches / OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# Keep the QR generator itself under version control (generate_qr.py is source)

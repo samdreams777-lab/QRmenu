@@ -1,0 +1,11 @@
+{
+    "name": "qr-menu",
+    "version": "1.0.0",
+    "description": "QR Menu for Common Coffee",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "python3 -m http.server 8080"
+    },
+    "keywords": ["qr", "menu", "coffee", "restaurant"],
+    "license": "MIT"
+}
