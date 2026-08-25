@@ -74,10 +74,10 @@
         </div>
 
         <div class="note">
-            Access is owner-authenticated. Token is sent to <code>/api/analytics?restaurant=&amp;token=</code>
-            (or <code>Authorization: Bearer</code>). In production, the token is issued to the venue owner only —
-            one venue's owner cannot read another venue's data.
-            Demo data: <code>data/analytics.jsonl</code>, <code>data/orders.jsonl</code>. No personal data collected.
+            Access is owner-authenticated. Token is sent to <code>./api/analytics?restaurant=&token=</code>
+                        (or <code>Authorization: *** In production, the token is issued to the venue owner only —
+                        one venue's owner cannot read another venue's data.
+                        Demo data: <code>data/analytics.jsonl</code>, <code>data/orders.jsonl</code>. No personal data collected.
         </div>
     </div>
 
@@ -113,7 +113,7 @@
             var token = document.getElementById('tokenInput').value.trim();
             try { localStorage.setItem('aiboss_dash_token', token); localStorage.setItem('aiboss_dash_rest', rest); } catch (e) {}
             document.getElementById('errBox').innerHTML = '';
-            fetch('/api/analytics?restaurant=' + encodeURIComponent(rest) + '&token=' + encodeURIComponent(token))
+            fetch('./api/analytics?restaurant=' + encodeURIComponent(rest) + '&token=' + encodeURIComponent(token))
                 .then(function (r) {
                     if (r.status === 401) { throw new Error('Unauthorized — invalid or missing owner token'); }
                     if (r.status === 404) { throw new Error('Unknown restaurant'); }

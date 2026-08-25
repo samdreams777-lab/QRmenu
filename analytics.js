@@ -1,5 +1,5 @@
 /* AI B.O.S.S. QR Menu — analytics client
- * Sends standard demo events to POST /api/event.
+ * Sends standard demo events to POST ./api/event.
  * No personal data. Falls back silently if backend is unavailable (does not break UX).
  */
 (function (global) {
@@ -12,7 +12,7 @@
     function safeSend(payload) {
         try {
             if (!global.fetch) return;
-            fetch('/api/event', {
+            fetch('./api/event', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload),

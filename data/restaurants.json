@@ -6,8 +6,8 @@
     "default_lang": "vi",
     "currency": "VND",
     "hotline": "0915 292 777",
-    "menu": "/data/camon/menu.json",
-    "photos": "/menu_photos/",
+    "menu": "./data/camon/menu.json",
+    "photos": "./menu_photos/",
     "google_review": "https://www.google.com/maps/place/CAMON+COFFEE/@16.809984,107.1087616,13z",
     "tables": ["01", "02", "03"]
   },
@@ -18,8 +18,8 @@
     "default_lang": "en",
     "currency": "VND",
     "hotline": "0915 292 777",
-    "menu": "/data/menu.json",
-    "photos": "/menu_photos/",
+    "menu": "./data/menu.json",
+    "photos": "./menu_photos/",
     "google_review": "https://www.google.com/maps/place/CAMON+COFFEE/@16.809984,107.1087616,13z",
     "tables": []
   }

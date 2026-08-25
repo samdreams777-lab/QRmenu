@@ -107,7 +107,7 @@ function getItemByKey(key) {
 // ---- Load restaurant config then menu ----
 async function loadMenuData() {
     try {
-        const cfgResp = await fetch('/api/config?restaurant=' + encodeURIComponent(CTX.restaurant_id));
+        const cfgResp = await fetch('./api/config?restaurant=' + encodeURIComponent(CTX.restaurant_id));
         if (cfgResp.ok) {
             RESTAURANT = Object.assign(RESTAURANT, await cfgResp.json());
         }
@@ -195,7 +195,7 @@ function renderItems() {
     }
     container.innerHTML = items.map(({ item, key }) => {
         const qty = cart[key] ? cart[key].qty : 0;
-        const imgPath = (RESTAURANT.photos || '/menu_photos/') + item.image;
+        const imgPath = (RESTAURANT.photos || './menu_photos/') + item.image;
         return `
             <div class="item-card" data-key="${key}" onclick="openItemDetail('${key}')">
                 <div class="item-image-wrap">
@@ -304,7 +304,7 @@ function renderCartModal() {
             if (!item) return '';
             const qty = cartItem.qty;
             const lineTotal = item.price * qty;
-            const imgPath = (RESTAURANT.photos || '/menu_photos/') + item.image;
+            const imgPath = (RESTAURANT.photos || './menu_photos/') + item.image;
             
             // Build modifiers display
             let modifiersHtml = '';
@@ -401,7 +401,7 @@ function openItemDetail(key) {
     const item = getItemByKey(key);
     if (!item) return;
     const body = document.getElementById('itemModalBody');
-    const imgPath = (RESTAURANT.photos || '/menu_photos/') + item.image;
+    const imgPath = (RESTAURANT.photos || './menu_photos/') + item.image;
     const sKey = safeKey(key);
     
     // Build modifiers HTML if item has modifiers
@@ -662,7 +662,7 @@ async function handleSendOrder() {
     let backendOrderId = null;
     try {
         if (window.fetch) {
-            const r = await fetch('/api/order', {
+            const r = await fetch('./api/order', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
