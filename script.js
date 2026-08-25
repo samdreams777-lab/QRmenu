@@ -16,8 +16,10 @@ let currentCategory = null;
 let cart = {}; // key: `${catId}|${index}` -> { catId, idx, qty }
 
 // ---- Context (restaurant / table / session / lang) ----
-const CTX = (window.BossContext && window.BossContext.resolve) ? window.BossContext.resolve() : { restaurant_id: 'common', table_id: null, session_id: null, lang: null, device: null, source: null, campaign: null };
-let RESTAURANT = { id: 'common', name: 'Common Coffee', default_lang: 'en', menu: 'data/menu.json', currency: 'VND', google_review: '' };
+// Default context points to Camon Coffee so GitHub Pages (no backend /api/config)
+// loads the correct venue with full drink modifiers (Hot/Cold, Sugar, Ice).
+const CTX = (window.BossContext && window.BossContext.resolve) ? window.BossContext.resolve() : { restaurant_id: 'camon', table_id: null, session_id: null, lang: null, device: null, source: null, campaign: null };
+let RESTAURANT = { id: 'camon', name: 'Camon Coffee', default_lang: 'vi', menu: './data/camon/menu.json', currency: 'VND', google_review: '' };
 
 // ---- Fallback UI translations (for strings not in DOM) ----
 const translations = {
